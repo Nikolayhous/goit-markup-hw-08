@@ -1,0 +1,87 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.hero {
+    padding-top: 0;
+    background-color: $bg-hero-title;
+  
+  &__title {
+      color: $title-footer-color;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      letter-spacing: 0.06em;
+      text-align: center;
+      max-width: 696px;
+      text-transform: uppercase;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 30px;
+      padding-top: 200px;
+      }
+  }
+  
+  .hero__button {
+      display: block;
+      background-color: $button-hover-color;
+      color: $portfolio-text-hover-color;
+      font-size: 16px;
+      line-height: 1.87;
+      font-weight: bold;
+      letter-spacing: 0.06em;
+      padding: 10px 32px;
+      margin-right: auto;
+      margin-left: auto;
+      -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+  
+      &:hover,
+      &:focus {
+          background-color: #188ce8;
+      }
+  }
+  
+  .overlay {
+      max-width: 1600px;
+      height: 600px;
+      margin-right: auto;
+      margin-left: auto;
+      background-image: -webkit-gradient(
+          linear,
+          left top, right top,
+          from(rgba(47, 48, 58, 0.4)),
+          to(rgba(47, 48, 58, 0.4))
+          ),
+          url(../images/bg-img-hero.jpg);
+      background-image: -o-linear-gradient(
+          left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/bg-img-hero.jpg);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/bg-img-hero.jpg);
+      background-position: center;
+  }
+  
+  .animate__animated.animate__zoomIn {
+      -webkit-animation-name: zoomIn;
+              animation-name: zoomIn;
+      -webkit-animation-duration: 1500ms;
+              animation-duration: 1500ms;
+      -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+              animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      -webkit-animation-delay: 200ms;
+              animation-delay: 200ms;
+  }

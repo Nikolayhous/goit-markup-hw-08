@@ -1,0 +1,66 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.work {
+  padding-top: 0;
+}
+
+.work__title {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .work__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin-top: -30px; 
+    margin-left: -30px;
+  }
+  
+  .work__item {
+    margin-top: 30px; 
+    margin-left: 30px;
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
+  }
+  
+  .work__box {
+    position: relative;
+  }
+  
+  .work__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-weight: bold;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: $portfolio-text-hover-color;
+    background-color:rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    z-index: 1;
+  }
+  
+  .animate__animated.animate__fadeInUp {
+    -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+    -webkit-animation-duration: 1500ms;
+            animation-duration: 1500ms;
+    -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-animation-delay: 150ms;
+            animation-delay: 150ms; 
+    -webkit-animation-direction: alternate; 
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: 3;
+            animation-iteration-count: 3;
+  }

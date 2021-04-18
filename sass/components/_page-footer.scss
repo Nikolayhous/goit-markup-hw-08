@@ -1,0 +1,217 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.footer {
+  background-color: $dark-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__widget {
+  -ms-flex-preferred-size: calc((50% - 45px) / 2);
+      flex-basis: calc((50% - 45px) / 2);
+
+  &:last-child {
+    -ms-flex-preferred-size: calc(50% - 15px);
+        flex-basis: calc(50% - 15px);
+  }
+}
+
+.footer__logo {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 20px;
+
+  &--color {
+    color: $button-hover-color;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  &--link {
+    color: $title-footer-color;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    
+    &:hover, &:focus {
+        color: $button-hover-color;
+    }
+  }
+}
+
+.footer__list {
+  display: inline-block;
+  list-style: none;
+}
+
+.footer__item {
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer__contact--link.map {
+  color: $title-footer-color;
+  font-style: normal;
+  line-height: 1.7;
+  text-decoration: none;
+}
+
+.footer__contact--link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  line-height: 1.7;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: $button-hover-color;
+  }
+}
+
+.footer__text {
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $portfolio-text-hover-color;
+  margin-bottom: 20px;
+}
+
+.footer__list--social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.footer__item--social {
+  width: 44px;
+  height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer__link--icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+  border-radius: 50%;
+
+  &:hover, &:focus {
+    background-color: $button-hover-color;
+  }
+}
+
+.footer__text--subscribe {
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $portfolio-text-hover-color;
+  margin-bottom: 20px;
+}
+
+.footer__label--subscribe {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.footer__input--subscribe {
+  width: 358px;
+  font-size: 16px;
+  line-height: 1.25;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: $dark-bg-color;
+  color: $portfolio-text-hover-color;
+
+  &::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer__button--subscribe {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $portfolio-text-hover-color;
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  background-color: $button-hover-color;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  &:focus, &:hover {
+    background-color: #188ce8;
+  }
+}
+
+.footer__icon--subscribe {
+  margin-left: 10px;
+}

@@ -1,0 +1,102 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.team {
+  background-color: $bg-team-portfolio-icon-filter-color;
+} 
+
+.team__title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-top: -30px; 
+  margin-left: -30px;
+}
+
+.team__item {
+  background-color: $bg-body-color;
+  text-align: center;
+  margin-top: 30px; 
+  margin-left: 30px;
+  -ms-flex-preferred-size: calc((100% - 120px) / 4);
+      flex-basis: calc((100% - 120px) / 4);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__subtext  {
+  margin-top: 30px;
+}
+
+.team__collaborator {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 10px;
+}
+
+.team__profession {
+  font-size: 16px;
+  line-height: 1.18;
+  padding-bottom: 30px;
+}
+
+.team__list--social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+  list-style: none;
+}
+
+.team__item--social {
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+}
+
+.team__item--social {
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.team__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  fill: #afb1b8;
+
+  &:hover, &:focus {
+      background-color: $button-hover-color;
+      fill: #ffffff;
+  }
+}
