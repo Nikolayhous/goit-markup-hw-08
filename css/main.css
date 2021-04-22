@@ -649,38 +649,38 @@ img {
   border-color: #2196f3;
 }
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .footer__widget {
-  -ms-flex-preferred-size: calc((50% - 45px) / 2);
-  flex-basis: calc((50% - 45px) / 2);
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__widget {
+    flex-basis: calc((100%) / 2);
+  }
 }
 
 .footer__widget:last-child {
-  -ms-flex-preferred-size: calc(50% - 15px);
-  flex-basis: calc(50% - 15px);
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__widget {
+    flex-basis: calc((50% - 45px) / 2);
+  }
 }
 
 .footer__logo {
@@ -714,8 +714,22 @@ img {
   list-style: none;
 }
 
-.footer__item:not(:last-child) {
-  margin-bottom: 9px;
+@media screen and (max-width: 767px) {
+  .footer__list {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__list {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer__contact--link.map {
@@ -745,10 +759,15 @@ img {
 }
 
 .footer__list--social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  justify-content: center;
   list-style: none;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__list--social {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__item--social {
@@ -789,10 +808,10 @@ img {
   margin-bottom: 20px;
 }
 
-.footer__label--subscribe {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+@media screen and (min-width: 768px) {
+  .footer__label--subscribe {
+    display: inline-flex;
+  }
 }
 
 .footer__input--subscribe {
@@ -809,6 +828,12 @@ img {
   border-radius: 4px;
   background-color: #2f303a;
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__input--subscribe {
+    margin-bottom: 20px;
+  }
 }
 
 .footer__input--subscribe::-webkit-input-placeholder {
