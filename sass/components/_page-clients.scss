@@ -5,18 +5,13 @@
 }
 
 .clients__list {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
 }
-  @media screen and (min-width: $tablet-breakpoints) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
-}
+
 @media screen and (min-width: $desctop-breakpoints) {
   display: flex;
   margin-top: -30px;
