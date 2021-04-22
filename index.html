@@ -27,6 +27,17 @@
                 <a href="./index.html" class="header__logo">
                     <span class="header__logo--color">Web</span><span class="header__logo--link link">Studio</span>
                 </a>
+                <button type="button" 
+                        class="button header__menu--button is-open" 
+                        aria-controls="menu-container"
+                        aria-expanded="false" 
+                        data-menu-button>
+                    <svg class="header__icon--menu" width="40px" height="40px" aria-label="переключатель мобильного меню">
+                        <use class="header__icon--close" href="./images/symbol-defs.svg#icon-close"></use>
+                        <use class="header__icon--open" href="./images/symbol-defs.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                <div class="header__box--menu is-open" id="menu-container" data-menu></div>
                 <ul class="header__list">
                     <li class="header__item">
                         <a href="./index.html" class="header__link link current">Cтудия</a>
@@ -473,7 +484,7 @@
         <div class="modal">
             <button data-modal-close class="modal__button button">
                 <svg aria-label="close-icon" class="modal__close">
-                    <use href="./images/symbol-defs.svg#close"></use>
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
             <form class="modal__form" autocomplete="on">
@@ -541,9 +552,8 @@
         </div>
     </div>
 
-    
-    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/custom.js"></script>
 </body>
 
