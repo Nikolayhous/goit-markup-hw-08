@@ -1159,12 +1159,6 @@ img {
   background-color: #188ce8;
 }
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -1181,19 +1175,28 @@ img {
 }
 
 .portfolio__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   list-style: none;
-  margin-bottom: 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
 }
 
 .portfolio__item:not(:last-child) {
   margin-right: 8px;
-  text-align: center;
 }
 
 .portfolio__button {
@@ -1216,22 +1219,42 @@ img {
 }
 
 .portfolio__list--wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   list-style: none;
-  margin-top: -30px;
-  margin-left: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__list--wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
 
 .portfolio__item--wrap {
-  margin-top: 30px;
-  margin-left: 30px;
-  -ms-flex-preferred-size: calc((100% - 90px) / 3);
-  flex-basis: calc((100% - 90px) / 3);
   border: 1px solid #eeeeee;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__item--wrap {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__item--wrap {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__item--wrap {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
 }
 
 .portfolio__link {
@@ -1278,6 +1301,12 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__images {
+    width: 450px;
+  }
 }
 
 .portfolio__text--hiden {
