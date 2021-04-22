@@ -1,9 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 
 /* Глобальні стилі для секцій, контейнеру, заголовків та тексту секцій */
 body {
@@ -31,16 +25,31 @@ img {
 }
 
 .section {
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
 .container {
-    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+
+    @media screen and (min-width: $mobile-breakpoints) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: $tablet-breakpoints) {
+        width: 768px;
+    }
+    
+    @media screen and (min-width: $desctop-breakpoints) {
+        width: 1200px;
+    }
 }
 
 .section-title {

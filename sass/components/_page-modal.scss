@@ -238,7 +238,7 @@
   border-radius: 50px;
 }
 
-.modal__icon--custom::after {
+.modal__icon--custom::before {
   content: '';
   position: absolute;
   top: 1px;
@@ -251,16 +251,15 @@
   transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1), background-color 750ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__checkbox:checked + .modal__icon--custom::after {
+.modal__checkbox:checked + .modal__icon--custom::before {
   left: unset;
-  transform: translateX(25px);
+  transform: translate(26px);
   background-color: $button-hover-color;
   border: none;
 }
 
 .modal__checkbox:checked + .modal__icon--custom {
-background-color: rgba(49, 238, 159,0.7);
-transition: background-color 1750ms cubic-bezier(0.4, 0, 0.2, 1);
+background-color: rgba(49, 238, 159,0.8);
 }
 
 // .modal__icon--custom {
