@@ -1,12 +1,9 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 
-.work {
-  padding-top: 0;
+.work { 
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+    padding-top: 0;
 }
 
 .work__title {
