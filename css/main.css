@@ -157,6 +157,7 @@ img {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  z-index: 2;
 }
 
 .header__button--menu:hover, .header__button--menu:focus {
@@ -189,11 +190,15 @@ img {
   .header__container--menu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
-    background-color: #ffffff;
     z-index: 1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 15px;
+    background-color: #ffffff;
   }
   .header__container--menu.is-open {
     display: block;
@@ -208,7 +213,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .header__navigations {
-    margin-bottom: 302px;
+    margin-bottom: 220px;
   }
 }
 
@@ -220,14 +225,11 @@ img {
   .header__list {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 
 .header__item {
   position: relative;
-  display: inline-flex;
-  justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -237,9 +239,14 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .header__item:not(:last-child) {
-    margin-right: 50px;
+  .header__item {
+    display: inline-flex;
+    justify-content: center;
   }
+}
+
+.header__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header__link {
@@ -286,6 +293,12 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .header__link.current::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .header__contacts {
     margin-bottom: 64px;
   }
@@ -296,21 +309,6 @@ img {
     display: flex;
     align-items: center;
   }
-}
-
-.header__contact {
-  display: block;
-  color: #757575;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  fill: #757575;
-}
-
-.header__contact:hover, .header__contact:focus {
-  color: #2196f3;
-  fill: #2196f3;
 }
 
 @media screen and (min-width: 1200px) {
@@ -339,17 +337,81 @@ img {
   }
 }
 
-.header__box {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .header__box {
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 }
 
 .header__icon {
   margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .header__icon {
+    display: none;
+  }
+}
+
+.header__contact--maill {
+  display: block;
+  color: #757575;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  fill: #757575;
+}
+
+@media screen and (max-width: 767px) {
+  .header__contact--maill {
+    font-size: 24px;
+  }
+  .header__contact--maill:hover, .header__contact--maill:focus {
+    color: #2196f3;
+    fill: #2196f3;
+  }
+}
+
+.header__contact--maill:hover, .header__contact--maill:focus {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
+.header__contact--tel {
+  display: block;
+  color: #757575;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  fill: #757575;
+}
+
+@media screen and (max-width: 767px) {
+  .header__contact--tel {
+    font-size: 36px;
+    line-height: 1.76px;
+    color: #2196f3;
+  }
+  .header__contact--tel:hover, .header__contact--tel:focus {
+    color: #2196f3;
+    fill: #2196f3;
+  }
+}
+
+.header__contact--tel:hover, .header__contact--tel:focus {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .header__social {
+    max-width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -365,22 +427,17 @@ img {
 @media screen and (max-width: 767px) {
   .header__list--social {
     display: flex;
-    justify-content: center;
-    padding-bottom: 48px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .header__item--social {
-    margin-right: 20px;
+    justify-content: space-between;
   }
 }
 
 .header__link--social {
   color: #757575;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.22;
   letter-spacing: 0.02em;
+  color: #2196F3;
   text-decoration: none;
   cursor: pointer;
 }

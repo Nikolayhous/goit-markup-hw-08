@@ -24,16 +24,13 @@
 }
 }
 
-// .header__nav.is-open {
-//   display: none;
-// }
-
   .header__logo {
     display: block;
     text-decoration: none;
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
+
 
     &--color {
       color: $button-hover-color;
@@ -64,7 +61,8 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-
+    z-index: 2;
+   
     &:hover, &:focus {
       fill: $button-hover-color;
     }
@@ -95,15 +93,19 @@
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 15px;
 
     &.is-open {
       display: block;
     }
     background-color: $bg-body-color;
-    z-index: 1;
   }
 
   @media screen and (min-width: $tablet-breakpoints) {
@@ -113,7 +115,7 @@
 
 .header__navigations {
   @media screen and (max-width: 767px) {
-    margin-bottom: 302px;
+    margin-bottom: 220px;
   }
 }
 
@@ -121,23 +123,23 @@
     @media screen and (max-width: 767px) {
       display: flex;
       flex-direction: column;
-      align-items: center;
     }
     list-style: none;
   }
 
-  .header__item{
+  .header__item {
     @media screen and (max-width: 767px) {
       margin-bottom: 32px;
     }
     @media screen and (min-width: $tablet-breakpoints) {
+      display: inline-flex;
+      justify-content: center;
+    }
       &:not(:last-child) {
         margin-right: 50px;
       }
-    }
+   
     position: relative;
-    display: inline-flex;
-    justify-content: center;
   }
 
   .header__link {
@@ -145,6 +147,7 @@
     font-size: 40px;
     line-height: 1.175;
     }
+
     @media screen and (min-width: $tablet-breakpoints) {
       padding-top: 32px;
       padding-bottom: 32px;
@@ -168,6 +171,9 @@
   .header__link.current {
 
     &::after {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
       content: "";
       position: absolute;
       display: block;
@@ -190,21 +196,6 @@
     }
   }
     
-    .header__contact {
-    display: block;
-    color: $text-link-color;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    fill: #757575;
-
-    &:hover, &:focus {
-      color: $button-hover-color;
-      fill: $button-hover-color;
-    }
-  }
-
   .header__list--contacts {
     @media screen and (min-width: $desctop-breakpoints) {
     display: flex;
@@ -230,19 +221,72 @@
 }
 
   .header__box {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
+    @media screen and (min-width: $tablet-breakpoints) {
     display: inline-flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
+}
 
   .header__icon {
+    @media screen and (max-width: 767px) {
+        display: none;}
+
     margin-right: 10px;
+}
+
+  .header__contact--maill {
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      &:hover, &:focus {
+        color: $button-hover-color;
+        fill: $button-hover-color;
+    }
+  }
+    display: block;
+    color: $text-link-color;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    fill: #757575;
+
+    &:hover, &:focus {
+      color: $button-hover-color;
+      fill: $button-hover-color;
+    }
+  }
+
+  .header__contact--tel {
+    @media screen and (max-width: 767px) {
+      font-size: 36px;
+      line-height: 1.76px;
+      color: $button-hover-color;
+
+      &:hover, &:focus {
+        color: $button-hover-color;
+        fill: $button-hover-color;
+    }
+  }
+    display: block;
+    color: $text-link-color;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    fill: #757575;
+
+    &:hover, &:focus {
+      color: $button-hover-color;
+      fill: $button-hover-color;
+    }
   }
 
   .header__social {
+    @media screen and (max-width: 767px) {
+      max-width: 480px;
+    }
     @media screen and (min-width: $tablet-breakpoints) {
       display: none;
     }
@@ -251,23 +295,18 @@
   .header__list--social {
     @media screen and (max-width: 767px) {
       display: flex;
-      justify-content: center;
-      padding-bottom: 48px;
+      justify-content: space-between;
     }
     list-style: none;
-  }
-
-  .header__item--social {
-    @media screen and (max-width: 767px) {
-      margin-right: 20px;
-    }
   }
 
   .header__link--social {
     color: $text-link-color;
     font-weight: 500;
-    line-height: 1.14;
+    font-size: 18px;
+    line-height: 1.22;
     letter-spacing: 0.02em;
+    color: #2196F3;
     text-decoration: none;
     cursor: pointer;
 
