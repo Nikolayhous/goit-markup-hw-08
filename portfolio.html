@@ -26,15 +26,15 @@
                 <a href="./index.html" class="header__logo">
                     <span class="header__logo--color">Web</span><span class="header__logo--link link">Studio</span>
                 </a>
-                <button type="button" class="button header__button--menu is-open" aria-controls="menu-container"
+                <button type="button" class="button header__button--menu" aria-controls="menu-container"
                     aria-expanded="false" data-menu-button>
-                    <svg class="header__icon--menu" width="40px" height="40px"
+                    <svg class="header__icon--menu"   width="30px" height="30px"
                         aria-label="переключатель мобильного меню">
-                        <use class="header__icon--open" href="./images/symbol-defs.svg#icon-menu"></use>
                         <use class="header__icon--close" href="./images/symbol-defs.svg#icon-close"></use>
+                        <use class="header__icon--open"  href="./images/symbol-defs.svg#icon-menu"></use>
                     </svg>
                 </button>
-                <div class="header__container--menu is-open" id="menu-container" data-menu>
+                <div class="header__container--menu" id="menu-container" data-menu>
                     <div class="header__navigations">
                         <ul class="header__list">
                             <li class="header__item">
@@ -48,11 +48,11 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="header__contacts">
+                    <div class="header__contact">
                         <ul class="header__list header__list--contact">
                             <li class="header__item--end">
                                 <a href="tel:++380961111111" 
-                                    class="header__contact--tel link">
+                                    class="header__link--tel link">
                                     <div class="header__box">
                                         <svg class="header__icon" width="12px" height="16px">
                                             <use href="./images/symbol-defs.svg#smartphone"></use>
@@ -63,7 +63,7 @@
                             </li>
                             <li class="header__item--end">
                                 <a href="mailto:foreva@gmail.com" 
-                                    class="header__contact--maill link">
+                                    class="header__link--maill link">
                                     <div class="header__box">
                                         <svg class="header__icon" width="16px" height="12px">
                                             <use href="./images/symbol-defs.svg#envelope"></use>
@@ -386,6 +386,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/custom.js"></script>
 </body>
 

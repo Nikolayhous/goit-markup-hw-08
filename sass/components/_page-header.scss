@@ -310,13 +310,12 @@
   .header__list--social {
     @media screen and (max-width: 767px) {
       display: flex;
-      justify-content: center;
     }
     list-style: none;
   }
 
   .header__item--social {
-    margin-right: 20px;
+    margin-right: 15px;
   }
 
   .header__link--social {
