@@ -236,9 +236,8 @@
 
   .header__icon {
     @media screen and (max-width: 767px) {
-        display: none;}
-        
-    margin-right: 10px;
+      display: none;}   
+      margin-right: 10px;
 }
 
   .header__link--maill {
@@ -299,7 +298,7 @@
   }
 
   .header__social {
-    padding-bottom: 40px;
+    padding-bottom: 48px;
     padding-left: 40px;
     @media screen and (min-width: $tablet-breakpoints) {
       display: none;
@@ -309,6 +308,7 @@
   .header__list--social {
     @media screen and (max-width: 767px) {
       display: flex;
+      width: 100%;
     }
     list-style: none;
   }

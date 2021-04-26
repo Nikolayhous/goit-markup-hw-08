@@ -2,6 +2,7 @@
 
 .footer {
   background-color: $dark-bg-color;
+  min-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -78,9 +79,9 @@
 }
 
 .footer__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     &:not(:last-child) {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
     }
   }
 }
@@ -168,15 +169,19 @@
 
 .footer__input--subscribe {
   @media screen and (max-width: 1199px) {
+    width: 450px;
     margin-bottom: 20px;
   }
-  width: 358px;
+
+  @media screen and (min-width: $desctop-breakpoints) {
+    width: 358px;
+    margin-right: 12px;
+  }
   font-size: 16px;
   line-height: 1.25;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
