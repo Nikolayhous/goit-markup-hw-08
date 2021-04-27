@@ -150,6 +150,14 @@
     @media screen and (max-width: 767px) {
         width: 450px;
     }
+
+    @media screen and (min-width: $tablet-breakpoints) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: $desctop-breakpoints) {
+        width: 370px;
+    }
 }
 
 .portfolio__text--hiden {

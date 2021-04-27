@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./js/custom.js">
+    <link rel="stylesheet" href="./js/custom.js">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -28,10 +28,10 @@
                 </a>
                 <button type="button" class="button header__button--menu" aria-controls="menu-container"
                     aria-expanded="false" data-menu-button>
-                    <svg class="header__icon--menu"   width="30px" height="30px"
+                    <svg class="header__icon--menu" width="30px" height="30px"
                         aria-label="переключатель мобильного меню">
                         <use class="header__icon--close" href="./images/symbol-defs.svg#icon-close"></use>
-                        <use class="header__icon--open"  href="./images/symbol-defs.svg#icon-menu"></use>
+                        <use class="header__icon--open" href="./images/symbol-defs.svg#icon-menu"></use>
                     </svg>
                 </button>
                 <div class="header__container--menu" id="menu-container" data-menu>
@@ -51,8 +51,7 @@
                     <div class="header__contact">
                         <ul class="header__list header__list--contact">
                             <li class="header__item--end">
-                                <a href="tel:++380961111111" 
-                                    class="header__link--tel link">
+                                <a href="tel:++380961111111" class="header__link--tel link">
                                     <div class="header__box">
                                         <svg class="header__icon" width="12px" height="16px">
                                             <use href="./images/symbol-defs.svg#smartphone"></use>
@@ -62,8 +61,7 @@
                                 </a>
                             </li>
                             <li class="header__item--end">
-                                <a href="mailto:foreva@gmail.com" 
-                                    class="header__link--maill link">
+                                <a href="mailto:foreva@gmail.com" class="header__link--maill link">
                                     <div class="header__box">
                                         <svg class="header__icon" width="16px" height="12px">
                                             <use href="./images/symbol-defs.svg#envelope"></use>
@@ -77,32 +75,24 @@
                     <div class="header__social">
                         <ul class="header__list--social">
                             <li class="header__item--social">
-                                <a href="https://www.instagram.com/" 
-                                    class="header__link--social link"
-                                    rel="noopener noreferrer nofollow"
-                                    target="_blank">Instagram
+                                <a href="https://www.instagram.com/" class="header__link--social link"
+                                    rel="noopener noreferrer nofollow" target="_blank">Instagram
                                 </a>
                             </li>
                             <li class="header__item--social">
-                                <a href="https://twitter.com/" 
-                                    class="header__link--social link"
-                                    rel="noopener noreferrer nofollow"
-                                    target="_blank">Twitter
+                                <a href="https://twitter.com/" class="header__link--social link"
+                                    rel="noopener noreferrer nofollow" target="_blank">Twitter
                                 </a>
                             </li>
                             <li class="header__item--social">
-                                <a href="https://www.facebook.com/" 
-                                    class="header__link--social link"
-                                    rel="noopener noreferrer nofollow"
-                                    target="_blank">Facebook
-                            </a>
+                                <a href="https://www.facebook.com/" class="header__link--social link"
+                                    rel="noopener noreferrer nofollow" target="_blank">Facebook
+                                </a>
                             </li>
                             <li class="header__item--social">
-                                <a href="https://ua.linkedin.com/" 
-                                    class="header__link--social link"
-                                    rel="noopener noreferrer nofollow"
-                                    target="_blank">LinkedIn
-                            </a>
+                                <a href="https://ua.linkedin.com/" class="header__link--social link"
+                                    rel="noopener noreferrer nofollow" target="_blank">LinkedIn
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -143,9 +133,13 @@
                                         коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на
                                         защищённые сервера конкурентов.</p>
                                 </div>
-                                <img src="./images/portfolio/img.jpg" 
-                                class="portfolio__images"
-                                alt="фото проекта">
+                                <img srcset="
+                                    ./images/portfolio/mobile/img-1-450.jpg 1x,
+                                    ./images/portfolio/mobile/img-1-900.jpg 2x
+                                    " 
+                                    media="(max-width:767px)"
+                                    src="./images/portfolio/mobile/img-1-450.jpg" class="portfolio__images"
+                                    alt="фото проекта" width="450px">
                             </div>
                             <div class="portfolio__aside">
                                 <h2 class="portfolio__title section-title">Технокряк</h2>
@@ -161,9 +155,11 @@
                                         коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на
                                         защищённые сервера конкурентов.</p>
                                 </div>
-                                <img src="./images/portfolio/img-1.jpg" 
-                                class="portfolio__images"
-                                alt="фото проекта">
+                                <img srcset="
+                                ./images/portfolio/mobile/img-2-450.jpg 1x,
+                                ./images/portfolio/mobile/img-2-900.jpg 2x
+                                " src="./images/portfolio/mobile/img-2-450.jpg" class="portfolio__images"
+                                    alt="фото проекта" width="450">
                             </div>
                             <div class="portfolio__aside">
                                 <h2 class="portfolio__title section-title">Постер New Orlean vs Golden Star</h2>
@@ -179,9 +175,11 @@
                                         коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на
                                         защищённые сервера конкурентов.</p>
                                 </div>
-                                <img src="./images/portfolio/img-2.jpg" 
-                                class="portfolio__images"
-                                alt="фото проекта">
+                                <img srcset="
+                                ./images/portfolio/mobile/img-3-450.jpg 1x,
+                                ./images/portfolio/mobile/img-3-900.jpg 2x
+                                " src="./images/portfolio/mobile/img-3-450.jpg" class="portfolio__images"
+                                    alt="фото проекта" width="450">
                             </div>
                             <div class="portfolio__aside">
                                 <h2 class="portfolio__title section-title">Ресторан Seafood</h2>
@@ -197,9 +195,11 @@
                                         коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на
                                         защищённые сервера конкурентов.</p>
                                 </div>
-                                <img src="./images/portfolio/img-3.jpg" 
-                                class="portfolio__images"
-                                alt="фото проекта">
+                                <img srcset="
+                                ./images/portfolio/mobile/img-4-450.jpg 1x,
+                                ./images/portfolio/mobile/img-4-900.jpg 2x
+                                " src="./images/portfolio/mobile/img-4-354.jpg" class="portfolio__images"
+                                    alt="фото проекта" width="450">
                             </div>
                             <div class="portfolio__aside">
                                 <h2 class="portfolio__title section-title">Проект Prime</h2>
@@ -215,9 +215,11 @@
                                         коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на
                                         защищённые сервера конкурентов.</p>
                                 </div>
-                                <img src="./images/portfolio/img-4.jpg" 
-                                class="portfolio__images"
-                                alt="фото проекта">
+                                <img srcset="
+                                ./images/portfolio/mobile/img-5-450.jpg 1x,
+                                ./images/portfolio/mobile/img-5-900.jpg 2x
+                                " src="./images/portfolio/mobile/img-5-450.jpg" class="portfolio__images"
+                                    alt="фото проекта" width="450">
                             </div>
                             <div class="portfolio__aside">
                                 <h2 class="portfolio__title section-title">Проект Boxes</h2>
@@ -233,9 +235,11 @@
                                         коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на
                                         защищённые сервера конкурентов.</p>
                                 </div>
-                                <img src="./images/portfolio/img-5.jpg" 
-                                class="portfolio__images"
-                                alt="фото проекта">
+                                <img srcset="
+                                ./images/portfolio/mobile/img-6-450.jpg 1x,
+                                ./images/portfolio/mobile/img-6-900.jpg 2x
+                                " src="./images/portfolio/mobile/img-6-450.jpg" class="portfolio__images"
+                                    alt="фото проекта" width="450">
                             </div>
                             <div class="portfolio__aside">
                                 <h2 class="portfolio__title section-title">Inspiration has no Borders</h2>
@@ -251,9 +255,11 @@
                                         коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на
                                         защищённые сервера конкурентов.</p>
                                 </div>
-                                <img src="./images/portfolio/img-6.jpg" 
-                                class="portfolio__images"
-                                alt="фото проекта">
+                                <img srcset="
+                                ./images/portfolio/mobile/img-7-450.jpg 1x,
+                                ./images/portfolio/mobile/img-7-900.jpg 2x
+                                " src="./images/portfolio/mobile/img-7-450.jpg" class="portfolio__images"
+                                    alt="фото проекта" width="450">
                             </div>
                             <div class="portfolio__aside">
                                 <h2 class="portfolio__title section-title">Издание Limited Edition</h2>
@@ -269,9 +275,11 @@
                                         коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на
                                         защищённые сервера конкурентов.</p>
                                 </div>
-                                <img src="./images/portfolio/img-7.jpg" 
-                                class="portfolio__images"
-                                alt="фото проекта">
+                                <img srcset="
+                                ./images/portfolio/mobile/img-8-450.jpg 1x,
+                                ./images/portfolio/mobile/img-8-900.jpg 2x
+                                " src="./images/portfolio/mobile/img-8-450.jpg" class="portfolio__images"
+                                    alt="фото проекта" width="450">
                             </div>
                             <div class="portfolio__aside">
                                 <h2 class="portfolio__title section-title">Проект LAB</h2>
@@ -287,9 +295,11 @@
                                         коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на
                                         защищённые сервера конкурентов.</p>
                                 </div>
-                                <img src="./images/portfolio/img-8.jpg" 
-                                class="portfolio__images"
-                                alt="фото проекта">
+                                <img srcset="
+                                ./images/portfolio/mobile/img-9-450.jpg 1x,
+                                ./images/portfolio/mobile/img-9-900.jpg 2x
+                                " src="./images/portfolio/mobile/img-9-450.jpg" class="portfolio__images"
+                                    alt="фото проекта" width="450">
                             </div>
                             <div class="portfolio__aside">
                                 <h2 class="portfolio__title section-title">Growing Business</h2>

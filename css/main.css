@@ -470,12 +470,6 @@ img {
   fill: #2196f3;
 }
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 .hero {
   padding-top: 0;
   background-color: #c4c4c4;
@@ -484,16 +478,25 @@ img {
 .hero__title {
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
-  max-width: 696px;
   text-transform: uppercase;
   margin-right: auto;
   margin-left: auto;
+  max-width: 360px;
+  font-size: 26px;
+  line-height: 1.62;
+  padding-top: 118px;
   margin-bottom: 30px;
-  padding-top: 200px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    min-width: 696px;
+    padding-top: 200px;
+  }
 }
 
 .hero__button {
@@ -519,14 +522,52 @@ img {
 }
 
 .overlay {
-  max-width: 1600px;
-  height: 600px;
   margin-right: auto;
   margin-left: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-img-hero.jpg);
-  background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img-hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img-hero.jpg);
   background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero/hero-img-480.jpg);
+    max-width: 480px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero/hero-img-960.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero/hero-img-768.jpg);
+    max-width: 768px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero/hero-img-1536.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero/hero-img-1600.jpg);
+    max-width: 1600px;
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero/hero-img-3200.jpg);
+  }
 }
 
 .animate__animated.animate__zoomIn {
@@ -714,6 +755,24 @@ img {
 @media screen and (min-width: 1200px) {
   .team__item {
     flex-basis: calc((100% - 4 * 30px) / 4);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team__photo {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__photo {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__photo {
+    width: 370px;
   }
 }
 
@@ -1564,6 +1623,18 @@ img {
 @media screen and (max-width: 767px) {
   .portfolio__images {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__images {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__images {
+    width: 370px;
   }
 }
 

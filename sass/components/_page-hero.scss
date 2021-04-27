@@ -1,27 +1,30 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
+
 
 .hero {
     padding-top: 0;
     background-color: $bg-hero-title;
   
   &__title {
-      color: $title-footer-color;
-      font-weight: 900;
-      font-size: 44px;
-      line-height: 1.36;
-      letter-spacing: 0.06em;
-      text-align: center;
-      max-width: 696px;
-      text-transform: uppercase;
-      margin-right: auto;
-      margin-left: auto;
-      margin-bottom: 30px;
-      padding-top: 200px;
+
+    @media screen and (min-width: $desctop-breakpoints) {
+        font-size: 44px;
+        line-height: 1.36;
+        min-width: 696px;
+        padding-top: 200px;
+        }
+
+        color: $title-footer-color;
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        text-align: center;
+        text-transform: uppercase;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 360px;
+        font-size: 26px;
+        line-height: 1.62;
+        padding-top: 118px;
+        margin-bottom: 30px;
       }
   }
   
@@ -49,30 +52,70 @@
   }
   
   .overlay {
-      max-width: 1600px;  
-      height: 600px;
       margin-right: auto;
       margin-left: auto;
-      background-image: -webkit-gradient(
-          linear,
-          left top, right top,
-          from(rgba(47, 48, 58, 0.4)),
-          to(rgba(47, 48, 58, 0.4))
-          ),
-          url(../images/bg-img-hero.jpg);
-      background-image: -o-linear-gradient(
-          left,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-          ),
-          url(../images/bg-img-hero.jpg);
-      background-image: linear-gradient(
+      background-position: center;
+      background-size: cover;
+
+      @media screen and (max-width: 767px) {
+        background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
           ),
-          url(../images/bg-img-hero.jpg);
-      background-position: center;
+          url(/images/studio/hero/hero-img-480.jpg);
+
+      @media screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+            url(/images/studio/hero/hero-img-960.jpg);
+        }
+        max-width: 480px;
+        height: 400px;
+    }
+
+    @media screen and (min-width: $tablet-breakpoints) {
+        background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+          ),
+          url(/images/studio/hero/hero-img-768.jpg);
+
+      @media screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+            url(/images/studio/hero/hero-img-1536.jpg);
+        }
+        max-width: 768px;
+        height: 400px;
+    }
+
+    @media screen and (min-width: $desctop-breakpoints) {
+        background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+          ),
+          url(/images/studio/hero/hero-img-1600.jpg);
+
+      @media screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+            url(/images/studio/hero/hero-img-3200.jpg);
+        }
+        max-width: 1600px;
+        height: 600px;
+    }
   }
   
   .animate__animated.animate__zoomIn {

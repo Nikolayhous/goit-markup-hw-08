@@ -35,10 +35,20 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-// .team__item:not(:first-child) {
-//   margin-left: 0;
-// }
 
+.team__photo {
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $tablet-breakpoints) {
+    width: 354px;
+}
+
+  @media screen and (min-width: $desctop-breakpoints) {
+    width: 370px;
+}
+}
 .team__subtext  {
   margin-top: 30px;
 }
