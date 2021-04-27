@@ -230,40 +230,6 @@
   overflow: hidden;
 }
 
-// .modal__icon--custom {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 45px;
-//   height: 20px;
-//   border: 1px solid #595959;
-//   border-radius: 50px;
-// }
-
-// .modal__icon--custom::before {
-//   content: '';
-//   position: absolute;
-//   top: 1px;
-//   left: 2px;
-//   width: 15px;
-//   height: 15px;
-//   // border: 1px solid #595959;
-//   border-radius: 50%;
-//   background-color: rgba(8, 92, 219, 0.5);
-//   transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1), background-color 750ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
-
-// .modal__checkbox:checked + .modal__icon--custom::before {
-//   left: unset;
-//   transform: translate(26px);
-//   background-color: $button-hover-color;
-//   border: none;
-// }
-
-// .modal__checkbox:checked + .modal__icon--custom {
-// background-color: rgba(49, 238, 159,0.8);
-// }
-
 .modal__icon--custom {
   display: inline-block;
   width: 16px;

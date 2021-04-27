@@ -1,5 +1,4 @@
 
-
 .hero {
     padding-top: 0;
     background-color: $bg-hero-title;
@@ -58,6 +57,19 @@
       background-size: cover;
 
       @media screen and (max-width: 767px) {
+        background-image: -webkit-gradient(
+          linear,
+          left top, right top,
+          from(rgba(47, 48, 58, 0.4)),
+          to(rgba(47, 48, 58, 0.4))
+          ),
+          url(../images/studio/hero/hero-img-480.jpg);
+        background-image: -o-linear-gradient(
+          left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/studio/hero/hero-img-480.jpg);
         background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
@@ -65,7 +77,20 @@
           ),
           url(../images/studio/hero/hero-img-480.jpg);
 
-      @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+        background-image: -webkit-gradient(
+            linear,
+            left top, right top,
+            from(rgba(47, 48, 58, 0.4)),
+            to(rgba(47, 48, 58, 0.4))
+            ),
+            url(../images/studio/hero/hero-img-960.jpg);
+        background-image: -o-linear-gradient(
+            left,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+            url(../images/studio/hero/hero-img-960.jpg);
         background-image: linear-gradient(
             to right,
             rgba(47, 48, 58, 0.4),
@@ -78,6 +103,19 @@
     }
 
     @media screen and (min-width: $tablet-breakpoints) {
+        background-image: -webkit-gradient(
+          linear,
+          left top, right top,
+          from(rgba(47, 48, 58, 0.4)),
+          to(rgba(47, 48, 58, 0.4))
+          ),
+          url(../images/studio/hero/hero-img-768.jpg);
+        background-image: -o-linear-gradient(
+          left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/studio/hero/hero-img-768.jpg);
         background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
@@ -85,7 +123,20 @@
           ),
           url(../images/studio/hero/hero-img-768.jpg);
 
-      @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+        background-image: -webkit-gradient(
+            linear,
+            left top, right top,
+            from(rgba(47, 48, 58, 0.4)),
+            to(rgba(47, 48, 58, 0.4))
+            ),
+            url(../images/studio/hero/hero-img-1536.jpg);
+        background-image: -o-linear-gradient(
+            left,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+            url(../images/studio/hero/hero-img-1536.jpg);
         background-image: linear-gradient(
             to right,
             rgba(47, 48, 58, 0.4),
@@ -98,6 +149,19 @@
     }
 
     @media screen and (min-width: $desctop-breakpoints) {
+        background-image: -webkit-gradient(
+          linear,
+          left top, right top,
+          from(rgba(47, 48, 58, 0.4)),
+          to(rgba(47, 48, 58, 0.4))
+          ),
+          url(../images/studio/hero/hero-img-1600.jpg);
+        background-image: -o-linear-gradient(
+          left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/studio/hero/hero-img-1600.jpg);
         background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
@@ -105,7 +169,20 @@
           ),
           url(../images/studio/hero/hero-img-1600.jpg);
 
-      @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+        background-image: -webkit-gradient(
+            linear,
+            left top, right top,
+            from(rgba(47, 48, 58, 0.4)),
+            to(rgba(47, 48, 58, 0.4))
+            ),
+            url(../images/studio/hero/hero-img-3200.jpg);
+        background-image: -o-linear-gradient(
+            left,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+            url(../images/studio/hero/hero-img-3200.jpg);
         background-image: linear-gradient(
             to right,
             rgba(47, 48, 58, 0.4),

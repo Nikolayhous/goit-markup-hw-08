@@ -16,14 +16,21 @@
 
 .portfolio__list {
     @media screen and (max-width: 767px) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         margin-bottom: 40px;
     }
 
     @media screen and (min-width: $tablet-breakpoints) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin-bottom: 14px;
     }
     list-style: none;
@@ -66,8 +73,11 @@
 
 .portfolio__list--wrap {
     @media screen and (min-width: $tablet-breakpoints) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         margin-top: -30px;
         margin-left: -30px;
     }
@@ -85,13 +95,15 @@
     @media screen and (min-width: $tablet-breakpoints) {
     margin-top: 30px;
     margin-left: 30px;
-    flex-basis: calc((100% - 2 * 30px) / 2);
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
     }
 
   @media screen and (min-width: $desctop-breakpoints) {
     margin-top: 30px;
     margin-left: 30px;
-    flex-basis: calc((100% - 3 * 30px) / 3);
+    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 3);
+        flex-basis: calc((100% - 3 * 30px) / 3);
     }
 
     border: 1px solid #eeeeee;

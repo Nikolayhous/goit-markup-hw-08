@@ -1,12 +1,17 @@
 
 .about__list {
     @media screen and (min-width: $tablet-breakpoints) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         margin-top: -30px;
         margin-left: -30px;
     }
     @media screen and (min-width: $desctop-breakpoints) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-top: -30px;
         margin-left: -30px;
@@ -19,19 +24,27 @@
     @media screen and (min-width: $tablet-breakpoints) {
     margin-top: 30px;
     margin-left: 30px;
-    flex-basis: calc((100% - 2 * 30px) / 2);
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
     }
     @media screen and (min-width: $desctop-breakpoints) {
         margin-top: 30px;
         margin-left: 30px;
-        flex-basis: calc((100% - 4 * 30px) / 4);
+        -ms-flex-preferred-size: calc((100% - 4 * 30px) / 4);
+            flex-basis: calc((100% - 4 * 30px) / 4);
         }
 }
 
 .about__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: $bg-team-portfolio-icon-filter-color;
     height: 120px;
     margin-bottom: 30px;
