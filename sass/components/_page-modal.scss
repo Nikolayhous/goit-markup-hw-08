@@ -25,16 +25,16 @@
 }
 
 .modal {
-@media screen and (max-width: 767px) {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@media screen and (max-width: 1199px) {
   width: 450px;
 }
-  position: absolute;
+
+@media screen and (min-width: $desctop-breakpoints) {
   min-width: 528px;
   min-height: 581px;
+}
+
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scaleY(1);
@@ -49,6 +49,10 @@
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
 }
 
 .modal__button {
@@ -87,11 +91,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 448px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 448px;
 }
 
 .modal__title {
@@ -230,58 +230,58 @@
   overflow: hidden;
 }
 
-.modal__icon--custom {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 45px;
-  height: 20px;
-  border: 1px solid #595959;
-  border-radius: 50px;
-}
-
-.modal__icon--custom::before {
-  content: '';
-  position: absolute;
-  top: 1px;
-  left: 2px;
-  width: 15px;
-  height: 15px;
-  // border: 1px solid #595959;
-  border-radius: 50%;
-  background-color: rgba(8, 92, 219, 0.5);
-  transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1), background-color 750ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__checkbox:checked + .modal__icon--custom::before {
-  left: unset;
-  transform: translate(26px);
-  background-color: $button-hover-color;
-  border: none;
-}
-
-.modal__checkbox:checked + .modal__icon--custom {
-background-color: rgba(49, 238, 159,0.8);
-}
-
 // .modal__icon--custom {
-//   display: inline-block;
-//   width: 16px;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 45px;
+//   height: 20px;
+//   border: 1px solid #595959;
+//   border-radius: 50px;
+// }
+
+// .modal__icon--custom::before {
+//   content: '';
+//   position: absolute;
+//   top: 1px;
+//   left: 2px;
+//   width: 15px;
 //   height: 15px;
-//   border: 1px solid rgba(0, 0, 0, 0.8);
-//   border-radius: 2px;
-//   margin-right: 7px;
+//   // border: 1px solid #595959;
+//   border-radius: 50%;
+//   background-color: rgba(8, 92, 219, 0.5);
+//   transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1), background-color 750ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .modal__checkbox:checked + .modal__icon--custom::before {
+//   left: unset;
+//   transform: translate(26px);
+//   background-color: $button-hover-color;
+//   border: none;
 // }
 
 // .modal__checkbox:checked + .modal__icon--custom {
-//   background-color: $button-hover-color;
-//   border-color: $button-hover-color;
-//   background-image: url(../images/icon/check-icon.svg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: contain;
-//   background-origin: border-box;
+// background-color: rgba(49, 238, 159,0.8);
 // }
+
+.modal__icon--custom {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.modal__checkbox:checked + .modal__icon--custom {
+  background-color: $button-hover-color;
+  border-color: $button-hover-color;
+  background-image: url(../images/icon/check-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-origin: border-box;
+}
 
 .modal__checkbox:hover + .modal__icon--custom {
 border-color: $button-hover-color;
@@ -291,11 +291,17 @@ transition: border-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__text--checkbox {
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
   color: $text-link-color;
   line-height: 1.71;
 }
 
 .modal__link {
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
   color: $button-hover-color;
   text-decoration: underline;
   cursor: pointer;

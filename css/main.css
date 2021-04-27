@@ -530,43 +530,43 @@ img {
 
 @media screen and (max-width: 767px) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero/hero-img-480.jpg);
-    max-width: 480px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/hero-img-480.jpg);
+    max-width: 767px;
     height: 400px;
   }
 }
 
-@media screen and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero/hero-img-960.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/hero-img-960.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero/hero-img-768.jpg);
-    max-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/hero-img-768.jpg);
+    max-width: 1199px;
     height: 400px;
   }
 }
 
-@media screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero/hero-img-1536.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/hero-img-1536.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero/hero-img-1600.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/hero-img-1600.jpg);
     max-width: 1600px;
     height: 600px;
   }
 }
 
-@media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero/hero-img-3200.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/hero-img-3200.jpg);
   }
 }
 
@@ -1099,7 +1099,7 @@ img {
 
 @media screen and (max-width: 1199px) {
   .footer__input--subscribe {
-    width: 450px;
+    width: 100%;
     margin-bottom: 20px;
   }
 }
@@ -1190,8 +1190,6 @@ img {
 
 .modal {
   position: absolute;
-  min-width: 528px;
-  min-height: 581px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scaleY(1);
@@ -1206,15 +1204,22 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -1254,11 +1259,7 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 448px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 448px;
 }
 
 .modal__title {
@@ -1395,36 +1396,22 @@ img {
 }
 
 .modal__icon--custom {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 45px;
-  height: 20px;
-  border: 1px solid #595959;
-  border-radius: 50px;
-}
-
-.modal__icon--custom::before {
-  content: '';
-  position: absolute;
-  top: 1px;
-  left: 2px;
-  width: 15px;
+  display: inline-block;
+  width: 16px;
   height: 15px;
-  border-radius: 50%;
-  background-color: rgba(8, 92, 219, 0.5);
-  transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1), background-color 750ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__checkbox:checked + .modal__icon--custom::before {
-  left: unset;
-  transform: translate(26px);
-  background-color: #2196f3;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+  margin-right: 7px;
 }
 
 .modal__checkbox:checked + .modal__icon--custom {
-  background-color: rgba(49, 238, 159, 0.8);
+  background-color: #2196f3;
+  border-color: #2196f3;
+  background-image: url(../images/icon/check-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-origin: border-box;
 }
 
 .modal__checkbox:hover + .modal__icon--custom {
@@ -1439,12 +1426,24 @@ img {
   line-height: 1.71;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal__text--checkbox {
+    font-size: 12px;
+  }
+}
+
 .modal__link {
   color: #2196f3;
   text-decoration: underline;
   cursor: pointer;
   display: inline;
   line-height: 1.71;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal__link {
+    font-size: 12px;
+  }
 }
 
 .modal__buttom {
