@@ -14,7 +14,7 @@
     -o-transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1);
     background: rgba(0, 0, 0, 0.2);
-    z-index: 2;
+    z-index: 4;
     overflow-y: scroll;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .modal {
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   width: 450px;
 }
 
@@ -257,7 +257,7 @@ transition: border-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__text--checkbox {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     font-size: 12px;
   }
   color: $text-link-color;
@@ -265,7 +265,7 @@ transition: border-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__link {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     font-size: 12px;
   }
   color: $button-hover-color;

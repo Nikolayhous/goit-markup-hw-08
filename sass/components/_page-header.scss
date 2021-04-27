@@ -40,7 +40,7 @@
     text-decoration: none;
     padding-top: 24px;
     padding-bottom: 25px;
-    @media screen and (min-width: $tablet-breakpoints) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet-breakpoints) and (max-width: 1199.98px) {
     margin-right: 88px;
     }
     @media screen and (min-width: $desctop-breakpoints) {
@@ -110,7 +110,7 @@
 
 .header__container--menu {
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
     position: absolute;
     top: 0;
@@ -135,7 +135,7 @@
 }
 
 .header__navigations {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     margin-bottom: 230px;
     padding-top: 48px;
     padding-left: 40px;
@@ -150,7 +150,7 @@
   }
 
   .header__item {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
       &:not(:last-child) {
       margin-bottom: 32px;
       }
@@ -167,7 +167,7 @@
 }
 
   .header__link {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
     font-size: 40px;
     line-height: 1.175;
     }
@@ -195,7 +195,7 @@
   .header__link.current {
 
     &::after {
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 767.98px) {
         display: none;
       }
       content: "";
@@ -211,7 +211,7 @@
   }
 
   .header__contact {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
       margin-bottom: 64px;
       padding-left: 40px;
     }
@@ -219,7 +219,7 @@
     
     
   .header__list--contact {
-    @media screen and (min-width: $tablet-breakpoints) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet-breakpoints) and (max-width: 1199.98px) {
       margin-left: 45px;
     }
      @media screen and (min-width: $desctop-breakpoints) {
@@ -231,12 +231,12 @@
 }
   
   .header__item--end {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
       &:not(:last-child) {
         margin-bottom: 32px;
       }
     }
-    @media screen and (min-width: $tablet-breakpoints) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet-breakpoints) and (max-width: 1199.98px) {
 
       &:not(:first-child) {
         margin-top: 10px;
@@ -262,13 +262,13 @@
 }
 
   .header__icon {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
       display: none;}   
       margin-right: 10px;
 }
 
   .header__link--maill {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
       font-size: 24px;
       &:hover, &:focus {
         color: $button-hover-color;
@@ -294,7 +294,7 @@
   }
 
   .header__link--tel {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
       font-size: 36px;
       line-height: 1.76;
       color: $button-hover-color;
@@ -333,7 +333,7 @@
   }
 
   .header__list--social {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;

@@ -6,7 +6,7 @@
 }
 
 .footer__container {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -33,10 +33,10 @@
 
 
 .footer__widget {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     text-align: center;
   }
-  @media screen and (min-width: $tablet-breakpoints) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet-breakpoints) and (max-width: 1199.98px) {
     -ms-flex-preferred-size: calc((100%) / 2);
         flex-basis: calc((100%) / 2);
     text-align: center;
@@ -81,7 +81,7 @@
 }
 
 .footer__list {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     margin-bottom: 60px;
   }
   @media screen and (min-width: $tablet-breakpoints) {
@@ -92,7 +92,7 @@
 }
 
 .footer__item {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     &:not(:last-child) {
       margin-bottom: 8px;
     }
@@ -126,7 +126,7 @@
 }
 
 .footer__list--social {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     margin-bottom: 60px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -192,7 +192,7 @@
     display: inline-flex;
   }
 
-  @media screen and (min-width: $tablet-breakpoints) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet-breakpoints) and (max-width: 1199.98px) {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -202,7 +202,7 @@
 }
 
 .footer__input--subscribe {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     width: 100%;
     margin-bottom: 20px;
   }
