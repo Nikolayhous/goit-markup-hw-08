@@ -31,7 +31,10 @@
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        margin-bottom: 14px;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: $desctop-breakpoints) {
+        margin-bottom: 50px;
     }
     list-style: none;
     text-align: center;
@@ -81,10 +84,7 @@
         margin-top: -30px;
         margin-left: -30px;
     }
-    
- 
     list-style: none;
-
 }
 
 .portfolio__item--wrap {

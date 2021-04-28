@@ -84,7 +84,7 @@
   @media screen and (max-width: 767.98px) {
     margin-bottom: 60px;
   }
-  @media screen and (min-width: $tablet-breakpoints) {
+  @media screen and (min-width: $tablet-breakpoints) and (max-width: 1199.98px) {
     margin-bottom: 60px;
   }
   display: inline-block;
@@ -95,6 +95,11 @@
   @media screen and (max-width: 1199.98px) {
     &:not(:last-child) {
       margin-bottom: 8px;
+    }
+  }
+  @media screen and (min-width: $desctop-breakpoints) {
+    &:not(:last-child) {
+      margin-bottom: 9px;
     }
   }
 }

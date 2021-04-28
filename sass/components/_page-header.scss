@@ -112,7 +112,6 @@
 
   @media screen and (max-width: 767.98px) {
     display: none;
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -122,6 +121,10 @@
       display: block;
     }
     background-color: $bg-body-color;
+    height: 100vh;
+    position: fixed;
+    padding-top: 48px;
+    padding-left: 30px;
   }
 
   @media screen and (min-width: $tablet-breakpoints) {
@@ -136,9 +139,8 @@
 
 .header__navigations {
   @media screen and (max-width: 767.98px) {
-    margin-bottom: 230px;
-    padding-top: 48px;
-    padding-left: 40px;
+    margin-bottom: 250px;
+
   } 
   @media screen and (min-width: $desctop-breakpoints) {
     margin-right: 298px;
@@ -210,10 +212,13 @@
     }
   }
 
+  .header__general--bottom {
+    bottom: 0;
+  }
+
   .header__contact {
     @media screen and (max-width: 767.98px) {
       margin-bottom: 64px;
-      padding-left: 40px;
     }
     }
     
@@ -325,8 +330,6 @@
   }
 
   .header__social {
-    padding-bottom: 48px;
-    padding-left: 40px;
     @media screen and (min-width: $tablet-breakpoints) {
       display: none;
     }
