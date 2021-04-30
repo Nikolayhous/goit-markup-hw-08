@@ -382,6 +382,7 @@ img {
 @media screen and (max-width: 767.98px) {
   .header__link--maill {
     font-size: 24px;
+    color: #757575;
   }
   .header__link--maill:hover, .header__link--maill:focus {
     color: #2196f3;
@@ -416,14 +417,19 @@ img {
 }
 
 .link-contacts {
-  display: flex;
-  align-items: center;
-  color: #757575;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   text-decoration: none;
-  fill: #757575;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .link-contacts {
+    display: flex;
+    align-items: center;
+    color: #757575;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    fill: #757575;
+  }
 }
 
 .link-contacts:hover, .link-contacts:focus {

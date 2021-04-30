@@ -263,6 +263,8 @@
   .header__link--maill {
     @media screen and (max-width: 767.98px) {
       font-size: 24px;
+      color: $text-link-color;
+
       &:hover, &:focus {
         color: $button-hover-color;
         fill: $button-hover-color;
@@ -293,21 +295,23 @@
   }
 
   .link-contacts {
+    text-decoration: none;
+    font-weight: 500;
+    
+    @media screen and (min-width: $tablet-breakpoints) {
     display: flex;
     align-items: center;
-    // display: block;
     color: $text-link-color;
-    font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
     fill: #757575;
+    }
 
     &:hover, &:focus {
       color: $button-hover-color;
       fill: $button-hover-color;
     }
-
+    
   }
 
   .header__social {
