@@ -2,17 +2,6 @@
 .header {
   position: relative;
   border-bottom: 1px solid #ececec;
-
-  &__container {
-    @media screen and (min-width: $tablet-breakpoints) {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-    }
-}
 }
 
 .header__nav {
@@ -143,7 +132,7 @@
 
   } 
   @media screen and (min-width: $desctop-breakpoints) {
-    margin-right: 298px;
+    margin-right: 299px;
   }
 }
 
@@ -212,9 +201,12 @@
     }
   }
 
-  .header__general--bottom {
-    bottom: 0;
+  .header__box--fixed {
+    @media screen and (max-width: 767.98px) {
+    position: fixed;
+    bottom: 48px;
   }
+}
 
   .header__contact {
     @media screen and (max-width: 767.98px) {
@@ -222,17 +214,13 @@
     }
     }
     
-    
   .header__list--contact {
     @media screen and (min-width: $tablet-breakpoints) and (max-width: 1199.98px) {
-      margin-left: 45px;
+      margin-left: 46px;
     }
-     @media screen and (min-width: $desctop-breakpoints) {
-    display: -webkit-box;
-    display: -ms-flexbox;
+    @media screen and (min-width: $desctop-breakpoints) {
     display: flex;
-    margin-left: auto;
-  }
+    }
 }
   
   .header__item--end {
@@ -283,18 +271,6 @@
   @media screen and (min-width: $desctop-breakpoints) {
     padding-top: 32px;
     padding-bottom: 32px;
-  }
-    display: block;
-    color: $text-link-color;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    fill: #757575;
-
-    &:hover, &:focus {
-      color: $button-hover-color;
-      fill: $button-hover-color;
     }
   }
 
@@ -314,8 +290,12 @@
     padding-top: 32px;
     padding-bottom: 32px;
   }
+  }
 
-    display: block;
+  .link-contacts {
+    display: flex;
+    align-items: center;
+    // display: block;
     color: $text-link-color;
     font-weight: 500;
     line-height: 1.14;
@@ -327,6 +307,7 @@
       color: $button-hover-color;
       fill: $button-hover-color;
     }
+
   }
 
   .header__social {

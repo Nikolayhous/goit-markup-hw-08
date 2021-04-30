@@ -99,17 +99,6 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-width: 768px) {
-  .header__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
 @media screen and (max-width: 767.98px) {
   .header__nav {
     display: -webkit-box;
@@ -251,7 +240,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .header__navigations {
-    margin-right: 298px;
+    margin-right: 299px;
   }
 }
 
@@ -326,8 +315,11 @@ img {
   }
 }
 
-.header__general--bottom {
-  bottom: 0;
+@media screen and (max-width: 767.98px) {
+  .header__box--fixed {
+    position: fixed;
+    bottom: 48px;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -338,16 +330,13 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .header__list--contact {
-    margin-left: 45px;
+    margin-left: 46px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header__list--contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    margin-left: auto;
   }
 }
 
@@ -390,16 +379,6 @@ img {
   }
 }
 
-.header__link--maill {
-  display: block;
-  color: #757575;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  fill: #757575;
-}
-
 @media screen and (max-width: 767.98px) {
   .header__link--maill {
     font-size: 24px;
@@ -415,21 +394,6 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
   }
-}
-
-.header__link--maill:hover, .header__link--maill:focus {
-  color: #2196f3;
-  fill: #2196f3;
-}
-
-.header__link--tel {
-  display: block;
-  color: #757575;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  fill: #757575;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -451,7 +415,18 @@ img {
   }
 }
 
-.header__link--tel:hover, .header__link--tel:focus {
+.link-contacts {
+  display: flex;
+  align-items: center;
+  color: #757575;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  fill: #757575;
+}
+
+.link-contacts:hover, .link-contacts:focus {
   color: #2196f3;
   fill: #2196f3;
 }
@@ -1320,7 +1295,13 @@ img {
   padding-left: 40px;
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 479.98px) {
+  .modal {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
   .modal {
     width: 450px;
   }
@@ -1489,7 +1470,7 @@ img {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: flex-end;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
   cursor: pointer;
