@@ -216,10 +216,13 @@
     
   .header__list--contact {
     @media screen and (min-width: $tablet-breakpoints) and (max-width: 1199.98px) {
+      display: flex;
+      flex-direction: column-reverse;
       margin-left: 43px;
     }
     @media screen and (min-width: $desctop-breakpoints) {
     display: flex;
+    flex-direction: row-reverse;
     }
 }
   
@@ -231,12 +234,12 @@
     }
     @media screen and (min-width: $tablet-breakpoints) and (max-width: 1199.98px) {
 
-      &:not(:first-child) {
+      &:not(:last-child) {
         margin-top: 10px;
       }
     }
       @media screen and (min-width: $desctop-breakpoints) {
-        &:not(:last-child) {
+        &:not(:first-child) {
           margin-right: 30px;
         }
       }

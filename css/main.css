@@ -330,6 +330,8 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .header__list--contact {
+    display: flex;
+    flex-direction: column-reverse;
     margin-left: 43px;
   }
 }
@@ -337,6 +339,7 @@ img {
 @media screen and (min-width: 1200px) {
   .header__list--contact {
     display: flex;
+    flex-direction: row-reverse;
   }
 }
 
@@ -347,13 +350,13 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .header__item--end:not(:first-child) {
+  .header__item--end:not(:last-child) {
     margin-top: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .header__item--end:not(:last-child) {
+  .header__item--end:not(:first-child) {
     margin-right: 30px;
   }
 }
